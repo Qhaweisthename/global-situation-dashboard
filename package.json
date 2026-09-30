@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ai": "node server/index.js",
+    "r3": "python r3_service/app.py",
+    "test:models": "node scripts/consistency_test.mjs"
   },
   "dependencies": {
     "cors": "^2.8.6",

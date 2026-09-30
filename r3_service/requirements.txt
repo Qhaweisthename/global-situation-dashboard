@@ -1,0 +1,5 @@
+torch>=2.0
+sentence-transformers>=5.3
+numpy
+flask>=3.0
+huggingface_hub[cli]

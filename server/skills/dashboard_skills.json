@@ -1,0 +1,72 @@
+[
+  {
+    "id": "global-risk-briefing",
+    "description": "Summarise the overall global situation and explain the global risk level",
+    "body": "Produces an analyst-style situation report across every domain. Covers the current global risk level and score, the top threat, correlated threats, the most significant cyber, disaster, air and maritime activity, and what has happened in the last 24 hours. Use for broad questions like 'give me a summary', 'what is happening right now', 'why is the risk elevated'.",
+    "dataKeys": ["globalRiskLevel", "globalRiskScore", "topThreat", "correlatedThreats", "dashboardStats", "threatTimeline"],
+    "instructions": "Give a structured briefing: global risk level and score, top threat, correlated threats, major cyber activity, major disaster activity, air and maritime activity. Explain what drives the risk level."
+  },
+  {
+    "id": "earthquake-analyst",
+    "description": "Analyse recent earthquakes, magnitudes, depths and affected regions",
+    "body": "Seismic monitoring skill using the USGS earthquake feed. Identifies the strongest recent earthquakes, reports magnitude and depth, lists affected regions and countries, flags shallow high-magnitude events that may cause damage or tsunamis, and counts seismic events.",
+    "dataKeys": ["earthquakes", "dashboardStats"],
+    "instructions": "Focus only on seismic activity. Rank earthquakes by magnitude, state location, magnitude, depth and time. Flag any event of magnitude 6.0 or higher."
+  },
+  {
+    "id": "volcano-analyst",
+    "description": "Report on active volcanoes and eruptions around the world",
+    "body": "Volcanic activity skill using NASA EONET. Lists currently active volcanoes and eruption events, where they are located, when they were reported, and whether they may affect aviation (ash) or nearby populations.",
+    "dataKeys": ["volcanoes", "dashboardStats"],
+    "instructions": "Focus only on volcanic activity. List each active volcano with location and date, and note possible aviation or population impact."
+  },
+  {
+    "id": "cve-kev-analyst",
+    "description": "Assess software vulnerabilities, CVEs, CVSS scores and known exploited vulnerabilities",
+    "body": "Vulnerability intelligence skill using the NVD CVE feed and the CISA Known Exploited Vulnerabilities (KEV) catalog. Identifies critical and high CVSS vulnerabilities, which vulnerabilities are actively exploited, affected vendors and products, and patching priority.",
+    "dataKeys": ["cves", "kevAlerts", "topThreat", "correlatedThreats"],
+    "instructions": "Focus on vulnerabilities. Prioritise KEV entries and critical CVSS scores. Name the CVE ID, vendor/product and why it matters. Recommend what to patch first."
+  },
+  {
+    "id": "ransomware-breach-analyst",
+    "description": "Track ransomware attacks, data breaches and cyber threat intelligence incidents",
+    "body": "Cyber incident skill covering ransomware.live victims and groups, public data breaches and exposed records, and threat intelligence advisories. Identifies targeted sectors and organisations, the most active ransomware groups, and the scale of breaches.",
+    "dataKeys": ["ransomwareAlerts", "breachAlerts", "threatIntelAlerts", "topThreat"],
+    "instructions": "Focus on ransomware, breaches and threat intel. Name victims, groups, sectors and dates where shown. Summarise patterns across incidents."
+  },
+  {
+    "id": "threat-correlation-analyst",
+    "description": "Find relationships and correlations between threats and events on a timeline",
+    "body": "Correlation and timeline skill. Explains which intelligence events are linked, the confidence and severity of each correlation, the reasoning behind it, and how events unfolded chronologically over the selected time window.",
+    "dataKeys": ["correlatedThreats", "topThreat", "threatTimeline", "globalRiskLevel"],
+    "instructions": "Explain each correlated threat: what is linked, confidence, severity and reasoning. Then give a short chronological narrative from the timeline."
+  },
+  {
+    "id": "aviation-tracker",
+    "description": "Answer questions about aircraft being tracked, flights, callsigns and altitudes",
+    "body": "Air domain awareness skill using OpenSky Network. Reports how many aircraft are tracked, callsigns, origin countries, altitudes and speeds, and anything unusual in air traffic.",
+    "dataKeys": ["aircraft", "dashboardStats"],
+    "instructions": "Focus on the air domain. Give counts, then notable aircraft with callsign, origin country, altitude and speed."
+  },
+  {
+    "id": "maritime-tracker",
+    "description": "Answer questions about ships, vessels, tankers, cargo and ports",
+    "body": "Maritime domain awareness skill. Reports vessel counts, cargo ships and tankers being tracked, their positions and movement, and port activity.",
+    "dataKeys": ["maritime", "dashboardStats"],
+    "instructions": "Focus on the maritime domain. Give counts by vessel type, then notable vessels and their positions."
+  },
+  {
+    "id": "space-weather-iss",
+    "description": "Report on space weather, geomagnetic storms, KP index and the International Space Station",
+    "body": "Space domain skill using NOAA Space Weather and ISS tracking. Reports the KP index and geomagnetic storm level, solar activity, the ISS position, altitude and velocity, and the current ISS crew.",
+    "dataKeys": ["spaceWeather", "iss", "issCrew"],
+    "instructions": "Focus on the space domain. Interpret the KP index (0-4 quiet, 5+ storm), then give ISS position, altitude, velocity and crew."
+  },
+  {
+    "id": "feed-health-monitor",
+    "description": "Check which data feeds are online, offline or failing on the dashboard",
+    "body": "Operational monitoring skill. Reports the health status of every intelligence feed (ISS, earthquakes, volcanoes, CVE, KEV, ransomware, aircraft, maritime and others) and which feeds are down or stale.",
+    "dataKeys": ["feedHealth"],
+    "instructions": "List feeds that are down or degraded first, then confirm which are healthy."
+  }
+]

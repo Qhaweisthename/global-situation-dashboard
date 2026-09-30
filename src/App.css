@@ -414,3 +414,68 @@ h2 {
   line-height: 1.5;
   text-align: left;
 }
+/* ---- Local AI model selector (Models A, B, C) ---- */
+.modelLabel {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.modelSelect {
+  width: 100%;
+  background: #050505;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.assistantMeta {
+  font-size: 11px;
+  color: #8fd3ff;
+  border: 1px solid #1f3a4d;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.consistencyRuns {
+  margin-top: 10px;
+}
+
+.runsVerdict {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.runsVerdict.same {
+  background: #0d2b16;
+  color: #6ee787;
+}
+
+.runsVerdict.different {
+  background: #2b220d;
+  color: #ffc85c;
+}
+
+.runCard {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.runHeader {
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 4px;
+  text-align: left;
+}

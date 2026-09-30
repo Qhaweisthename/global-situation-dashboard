@@ -35,3 +35,10 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+# Model C (R3-Skill) local weights and Python env
+r3_service/models/
+r3_service/.venv/
+__pycache__/
+*.pyc
+
+.venv/

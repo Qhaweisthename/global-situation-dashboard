@@ -453,6 +453,91 @@ Features:
 
 ---
 
+# Edge AI Models (Task 1): Deterministic vs Probabilistic vs Tencent R3-Skill
+
+All three models run **entirely on this machine**. Model weights are downloaded once; after that no request ever leaves `localhost`, and no cloud AI API is called.
+
+## Model note
+
+**Model A (Deterministic)** is Llama 3.1 running locally in Ollama with greedy decoding (`temperature: 0`, `top_k: 1`, fixed `seed: 42`), so the same question on the same dashboard data always returns the same answer. **Model B (Probabilistic)** is the same local Llama 3.1 with sampling enabled (`temperature: 0.9`, `top_p: 0.95`, `top_k: 40`) and a fresh random seed on every call, so repeated runs on identical input produce different answers. **Model C (Tencent R3-Skill)** runs Tencent's R3-Embedding-0.6B and R3-Rerank-0.6B locally to route each question to the most relevant dashboard "skill" (e.g. earthquake-analyst, cve-kev-analyst), then sends only that skill's slice of dashboard data to Llama 3.1 with Model A's deterministic settings; R3 itself is a retrieval model, not a text generator, and involves no sampling.
+
+## How it fits together
+
+```
+Browser (React, :5173)
+   │  question + live dashboard data + selected mode
+   ▼
+AI server (Node/Express, :5050)  server/index.js
+   ├── mode=deterministic ──► Ollama llama3.1 (temp 0, top_k 1, seed 42)
+   ├── mode=probabilistic ──► Ollama llama3.1 (temp 0.9, top_p 0.95, random seed)
+   └── mode=r3 ──► R3-Skill service (Python/Flask, :5055)  r3_service/app.py
+                     R3-Embedding recall ──► R3-Rerank ──► best skill
+                   ──► Ollama llama3.1 (deterministic) with that skill's data only
+```
+
+The skill library R3 routes over is in `server/skills/dashboard_skills.json` (10 skills, in Tencent's `name | description | body` format).
+
+## Extra requirements
+
+- Python 3.10+ (for Model C)
+- ~5 GB free disk for Llama 3.1 8B, plus ~2.5 GB for the two R3 models
+- 8 GB+ RAM recommended. If your machine is slow, set `OLLAMA_MODEL=llama3.2:3b` (see below)
+
+## Setup and run (four terminals)
+
+**Terminal 1: Ollama (Models A and B)**
+```
+ollama pull llama3.1
+ollama serve
+```
+(On Windows/macOS the Ollama app usually runs the server already; `ollama serve` will then say the port is in use, which is fine.)
+
+**Terminal 2: Tencent R3-Skill service (Model C)**
+```
+cd r3_service
+python -m venv .venv
+# Windows:  .venv\Scripts\activate
+# mac/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+hf download tencent/R3-embedding-0.6b --local-dir models/r3-embedding
+hf download tencent/R3-rerank-0.6b --local-dir models/r3-reranker
+python app.py
+```
+Expected: `Tencent R3-Skill router running on http://localhost:5055`
+
+**Terminal 3: AI backend**
+```
+node server/index.js
+```
+Check all three models: open http://localhost:5050/api/health and confirm `"ollama":"OK"` and `"r3":"OK"`.
+
+**Terminal 4: Dashboard**
+```
+npm install
+npm run dev
+```
+Open http://localhost:5173, choose a model in the **AI DASHBOARD ASSISTANT** panel, and ask a question.
+
+## Proving deterministic vs probabilistic
+
+- In the dashboard, click **Run 3× consistency test**. It freezes one snapshot of the dashboard data and sends the same question three times. Model A and Model C show "All 3 answers identical"; Model B shows "Answers differ between runs", with a different seed per run.
+- From the command line (uses a fixed data fixture): `npm run test:models`. Full answers are saved to `consistency_results.json`.
+
+Note: temperature 0 with a fixed seed is deterministic on a given machine and Ollama version. Tiny differences across different hardware (e.g. CPU vs GPU) are possible because of floating-point arithmetic; this is a known property of local LLM inference.
+
+## Configuration
+
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `OLLAMA_MODEL` | `llama3.1` | Local LLM used by Models A, B and C |
+| `OLLAMA_URL` | `http://127.0.0.1:11434` | Ollama server |
+| `R3_URL` | `http://127.0.0.1:5055` | R3-Skill service |
+| `R3_PORT` | `5055` | Port the R3 service listens on |
+
+(Port 5055 is used rather than 5060 because the fetch standard blocks 5060 as the SIP port.)
+
+---
+
 # Installation
 
 ## Requirements

@@ -59,6 +59,9 @@ function App() {
   const [assistantQuestion, setAssistantQuestion] = useState('')
   const [assistantAnswer, setAssistantAnswer] = useState('')
   const [assistantLoading, setAssistantLoading] = useState(false)
+  const [assistantMode, setAssistantMode] = useState('deterministic')
+  const [assistantMeta, setAssistantMeta] = useState(null)
+  const [consistencyRuns, setConsistencyRuns] = useState([])
 
 
 
@@ -1363,47 +1366,105 @@ const threatTimeline = [
 ]
 .slice(0, 50)
 
+// Strip display-only fields so the LLM prompt stays small
+const slimEvents = (events, n = 10) =>
+  (events || []).slice(0, n).map(event => {
+    const rest = { ...event }
+    delete rest.size
+    delete rest.color
+    return rest
+  })
+
+const buildDashboardData = () => ({
+  globalRiskLevel,
+  globalRiskScore,
+  topThreat,
+  correlatedThreats,
+  dashboardStats,
+  feedHealth,
+  threatTimeline: slimEvents(threatTimeline),
+  aircraft: slimEvents(aircraft),
+  maritime: slimEvents(vessels),
+  earthquakes: slimEvents(earthquakes),
+  volcanoes: slimEvents(volcanoes),
+  cves: slimEvents(cves),
+  kevAlerts: slimEvents(kevAlerts),
+  ransomwareAlerts: slimEvents(ransomwareAlerts),
+  breachAlerts: slimEvents(breachAlerts),
+  threatIntelAlerts: slimEvents(threatIntelAlerts),
+  spaceWeather,
+  iss: slimEvents(iss, 1),
+  issCrew
+})
+
+const requestAssistant = async (dashboardData) => {
+  const response = await fetch('http://localhost:5050/api/assistant', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      question: assistantQuestion,
+      dashboard: dashboardData,
+      mode: assistantMode
+    })
+  })
+  return response.json()
+}
+
 const askDashboardAssistant = async () => {
   if (!assistantQuestion.trim()) return
 
   setAssistantLoading(true)
   setAssistantAnswer('')
-
-  const dashboardData = {
-    globalRiskLevel,
-    globalRiskScore,
-    topThreat,
-    correlatedThreats,
-    dashboardStats,
-    feedHealth,
-    threatTimeline: threatTimeline.slice(0, 10),
-    aircraft: aircraft.slice(0, 10),
-    maritime: vessels.slice(0, 10),
-    earthquakes: earthquakes.slice(0, 10),
-    volcanoes: volcanoes.slice(0, 10)
-  }
+  setAssistantMeta(null)
+  setConsistencyRuns([])
 
   try {
-    const response = await fetch('http://localhost:5050/api/assistant', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        question: assistantQuestion,
-        dashboard: dashboardData
-      })
-    })
-
-    const data = await response.json()
-
+    const data = await requestAssistant(buildDashboardData())
     setAssistantAnswer(data.answer || data.error || 'No answer returned.')
-  } catch (error) {
+    if (data.answer) setAssistantMeta(data)
+  } catch {
     setAssistantAnswer('Could not connect to local AI assistant.')
   } finally {
     setAssistantLoading(false)
   }
 }
+
+// Sends the SAME question and a frozen snapshot of the SAME data 3 times,
+// so any difference between answers comes from the model, not the live feeds
+const runConsistencyTest = async () => {
+  if (!assistantQuestion.trim()) return
+
+  setAssistantLoading(true)
+  setAssistantAnswer('')
+  setAssistantMeta(null)
+  setConsistencyRuns([])
+
+  const snapshot = buildDashboardData()
+  const runs = []
+
+  try {
+    for (let i = 0; i < 3; i++) {
+      const data = await requestAssistant(snapshot)
+      runs.push({
+        answer: data.answer || data.error || 'No answer returned.',
+        seed: data.options?.seed,
+        skill: data.routing?.selectedSkill,
+        latencyMs: data.latencyMs
+      })
+      setConsistencyRuns([...runs])
+    }
+  } catch {
+    setAssistantAnswer('Could not connect to local AI assistant.')
+  } finally {
+    setAssistantLoading(false)
+  }
+}
+
+const allRunsIdentical =
+  consistencyRuns.length === 3 &&
+  consistencyRuns.every(run => run.answer === consistencyRuns[0].answer)
 
   return (
     <div className="dashboard">
@@ -1849,6 +1910,19 @@ const askDashboardAssistant = async () => {
 <div className="sectionTitle">AI DASHBOARD ASSISTANT</div>
 
 <div className="card detailCard">
+  <label className="modelLabel" htmlFor="assistantMode">Local model</label>
+  <select
+    id="assistantMode"
+    className="modelSelect"
+    value={assistantMode}
+    onChange={(e) => setAssistantMode(e.target.value)}
+    disabled={assistantLoading}
+  >
+    <option value="deterministic">Model A — Deterministic (temp 0)</option>
+    <option value="probabilistic">Model B — Probabilistic (temp 0.9)</option>
+    <option value="r3">Model C — Tencent R3-Skill router</option>
+  </select>
+
   <textarea
     value={assistantQuestion}
     onChange={(e) => setAssistantQuestion(e.target.value)}
@@ -1864,10 +1938,55 @@ const askDashboardAssistant = async () => {
     {assistantLoading ? 'Thinking...' : 'Ask AI Assistant'}
   </button>
 
+  <button
+    className="clearButton"
+    onClick={runConsistencyTest}
+    disabled={assistantLoading}
+  >
+    Run 3× consistency test
+  </button>
+
+  {assistantMeta && (
+    <div className="assistantMeta">
+      <div><strong>{assistantMeta.model}</strong></div>
+      <div>LLM: {assistantMeta.llm} · temp {assistantMeta.options?.temperature} · top_k {assistantMeta.options?.top_k} · seed {assistantMeta.options?.seed}</div>
+      {assistantMeta.routing && (
+        <div>
+          R3 routed to <strong>{assistantMeta.routing.selectedSkill}</strong>
+          {' '}(rerank {assistantMeta.routing.candidates?.[0]?.rerank_score})
+          <div>Runners-up: {assistantMeta.routing.candidates?.slice(1).map(c => `${c.id} (${c.rerank_score})`).join(', ')}</div>
+        </div>
+      )}
+      <div>Latency: {assistantMeta.latencyMs} ms</div>
+    </div>
+  )}
+
   {assistantAnswer && (
 <div className="assistantAnswer">
   <ReactMarkdown>{assistantAnswer}</ReactMarkdown>
 </div>
+  )}
+
+  {consistencyRuns.length > 0 && (
+    <div className="consistencyRuns">
+      {consistencyRuns.length === 3 && (
+        <div className={allRunsIdentical ? 'runsVerdict same' : 'runsVerdict different'}>
+          {allRunsIdentical
+            ? '✅ All 3 answers identical (deterministic behaviour)'
+            : '🎲 Answers differ between runs (probabilistic behaviour)'}
+        </div>
+      )}
+      {consistencyRuns.map((run, i) => (
+        <div key={i} className="runCard">
+          <div className="runHeader">
+            Run {i + 1} · seed {run.seed ?? 'n/a'}{run.skill ? ` · skill ${run.skill}` : ''} · {run.latencyMs} ms
+          </div>
+          <div className="assistantAnswer">
+            <ReactMarkdown>{run.answer}</ReactMarkdown>
+          </div>
+        </div>
+      ))}
+    </div>
   )}
 </div>
 
