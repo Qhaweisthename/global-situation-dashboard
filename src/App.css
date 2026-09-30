@@ -479,3 +479,26 @@ h2 {
   margin-bottom: 4px;
   text-align: left;
 }
+
+/* ---- Task 2 standard question set ---- */
+.studyTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin: 8px 0 12px;
+}
+
+.studyTable th,
+.studyTable td {
+  border: 1px solid #333;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+.studyTable th {
+  color: #8fd3ff;
+}
+
+details.runCard summary {
+  cursor: pointer;
+}

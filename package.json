@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "ai": "node server/index.js",
     "r3": "python r3_service/app.py",
-    "test:models": "node scripts/consistency_test.mjs"
+    "test:models": "node scripts/consistency_test.mjs",
+    "task2": "node scripts/standard_questions.mjs"
   },
   "dependencies": {
     "cors": "^2.8.6",

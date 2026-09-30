@@ -62,6 +62,9 @@ function App() {
   const [assistantMode, setAssistantMode] = useState('deterministic')
   const [assistantMeta, setAssistantMeta] = useState(null)
   const [consistencyRuns, setConsistencyRuns] = useState([])
+  const [studyResults, setStudyResults] = useState([])
+  const [studyProgress, setStudyProgress] = useState('')
+  const [studySnapshot, setStudySnapshot] = useState(null)
 
 
 
@@ -1462,6 +1465,117 @@ const runConsistencyTest = async () => {
   }
 }
 
+// ---- Task 2: standard question set ----
+const STANDARD_QUESTIONS = [
+  'Is there significant seismic activity right now, based on the current data?',
+  'Which region currently shows the highest overall risk?',
+  "Summarise today's cybersecurity threat level in one sentence.",
+  'Is volcanic activity trending up or down this week?',
+  'Give one recommendation based on current global risk levels.',
+  'How confident are you in this assessment, and why?'
+]
+const STUDY_MODES = ['deterministic', 'probabilistic', 'r3']
+const STUDY_RUNS = 2
+
+const MODE_NAMES = {
+  deterministic: 'Model A (Deterministic)',
+  probabilistic: 'Model B (Probabilistic)',
+  r3: 'Model C (Tencent R3-Skill)'
+}
+
+// Every question, model and run uses ONE frozen snapshot of the live data,
+// so differences come from the models, not from feeds refreshing mid-test
+const runStandardQuestionSet = async () => {
+  const snapshot = { capturedAt: new Date().toISOString(), ...buildDashboardData() }
+  const total = STANDARD_QUESTIONS.length * STUDY_MODES.length * STUDY_RUNS
+  const results = []
+  let done = 0
+
+  setAssistantLoading(true)
+  setStudyResults([])
+  setStudySnapshot(snapshot)
+
+  for (const [qIndex, question] of STANDARD_QUESTIONS.entries()) {
+    for (const mode of STUDY_MODES) {
+      const runs = []
+      for (let run = 1; run <= STUDY_RUNS; run++) {
+        done++
+        setStudyProgress(`Running ${done}/${total}: Q${qIndex + 1}, ${MODE_NAMES[mode]}, run ${run}`)
+        try {
+          const response = await fetch('http://localhost:5050/api/assistant', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ question, dashboard: snapshot, mode })
+          })
+          const data = await response.json()
+          runs.push({
+            answer: data.answer || data.error || 'No answer returned.',
+            seed: data.options?.seed,
+            skill: data.routing?.selectedSkill,
+            latencyMs: data.latencyMs
+          })
+        } catch {
+          runs.push({ answer: 'Could not connect to local AI assistant.' })
+        }
+      }
+      results.push({
+        qIndex,
+        question,
+        mode,
+        runs,
+        identical: runs.every(r => r.answer === runs[0].answer)
+      })
+      setStudyResults([...results])
+    }
+  }
+
+  setStudyProgress(`Finished ${total} runs at ${new Date().toLocaleTimeString()}`)
+  setAssistantLoading(false)
+}
+
+const downloadFile = (filename, text, type) => {
+  const url = URL.createObjectURL(new Blob([text], { type }))
+  const link = document.createElement('a')
+  link.href = url
+  link.download = filename
+  link.click()
+  URL.revokeObjectURL(url)
+}
+
+const studyToMarkdown = () => {
+  const lines = [
+    '# Task 2: Standard question set results',
+    '',
+    `Dashboard snapshot captured: ${studySnapshot?.capturedAt}`,
+    `Global risk at capture: ${studySnapshot?.globalRiskLevel} (score ${studySnapshot?.globalRiskScore})`,
+    `Runs per model per question: ${STUDY_RUNS}`,
+    '',
+    '## Consistency summary',
+    '',
+    '| Question | Model A | Model B | Model C |',
+    '| --- | --- | --- | --- |'
+  ]
+  STANDARD_QUESTIONS.forEach((q, i) => {
+    const cell = mode => {
+      const r = studyResults.find(x => x.qIndex === i && x.mode === mode)
+      return r ? (r.identical ? 'Identical' : 'Different') : '-'
+    }
+    lines.push(`| Q${i + 1} | ${cell('deterministic')} | ${cell('probabilistic')} | ${cell('r3')} |`)
+  })
+  STANDARD_QUESTIONS.forEach((q, i) => {
+    lines.push('', `## Q${i + 1}. ${q}`)
+    studyResults.filter(r => r.qIndex === i).forEach(r => {
+      lines.push('', `### ${MODE_NAMES[r.mode]} (${r.identical ? 'identical across runs' : 'differs across runs'})`)
+      r.runs.forEach((run, n) => {
+        const extra = [run.seed !== undefined && `seed ${run.seed}`, run.skill && `skill ${run.skill}`, run.latencyMs && `${run.latencyMs} ms`]
+          .filter(Boolean).join(', ')
+        lines.push('', `**Run ${n + 1}** (${extra})`, '', run.answer)
+      })
+    })
+  })
+  return lines.join('\n')
+}
+
 const allRunsIdentical =
   consistencyRuns.length === 3 &&
   consistencyRuns.every(run => run.answer === consistencyRuns[0].answer)
@@ -1987,6 +2101,69 @@ const allRunsIdentical =
         </div>
       ))}
     </div>
+  )}
+</div>
+
+<div className="sectionTitle">STANDARD QUESTION SET (TASK 2)</div>
+
+<div className="card detailCard">
+  <button
+    className="clearButton"
+    onClick={runStandardQuestionSet}
+    disabled={assistantLoading}
+  >
+    Run all 6 questions × 3 models × {STUDY_RUNS} runs
+  </button>
+
+  {studyProgress && <div className="runHeader">{studyProgress}</div>}
+
+  {studyResults.length > 0 && (
+    <>
+      <table className="studyTable">
+        <thead>
+          <tr><th>Q</th><th>A</th><th>B</th><th>C</th></tr>
+        </thead>
+        <tbody>
+          {STANDARD_QUESTIONS.map((q, i) => (
+            <tr key={i} title={q}>
+              <td>Q{i + 1}</td>
+              {STUDY_MODES.map(mode => {
+                const r = studyResults.find(x => x.qIndex === i && x.mode === mode)
+                return <td key={mode}>{r ? (r.identical ? '✅ same' : '🎲 diff') : '…'}</td>
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <button
+        className="clearButton"
+        onClick={() => downloadFile(`task2-results-${Date.now()}.md`, studyToMarkdown(), 'text/markdown')}
+      >
+        Download results (Markdown)
+      </button>
+
+      <button
+        className="clearButton"
+        onClick={() => downloadFile(`task2-snapshot-${Date.now()}.json`, JSON.stringify(studySnapshot, null, 2), 'application/json')}
+      >
+        Download data snapshot (JSON)
+      </button>
+
+      {studyResults.map((r, i) => (
+        <details key={i} className="runCard">
+          <summary className="runHeader">
+            Q{r.qIndex + 1} · {MODE_NAMES[r.mode]} · {r.identical ? 'identical' : 'differs'}
+          </summary>
+          {r.runs.map((run, n) => (
+            <div key={n}>
+              <div className="runHeader">Run {n + 1}{run.skill ? ` · skill ${run.skill}` : ''} · {run.latencyMs} ms</div>
+              <div className="assistantAnswer"><ReactMarkdown>{run.answer}</ReactMarkdown></div>
+            </div>
+          ))}
+        </details>
+      ))}
+    </>
   )}
 </div>
 

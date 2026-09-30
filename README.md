@@ -538,6 +538,20 @@ Note: temperature 0 with a fixed seed is deterministic on a given machine and Ol
 
 ---
 
+## Task 2: Standard question set
+
+In the dashboard, click **Run all 6 questions × 3 models × 2 runs** (under STANDARD QUESTION SET). It freezes one snapshot of the live data, asks every model each question twice, and shows a same/different table. Then use **Download results (Markdown)** and **Download data snapshot (JSON)** to keep the evidence.
+
+To replay the exact same snapshot later from the command line:
+```
+npm run task2 -- task2-snapshot-XXXX.json
+```
+This writes `task2-results.md` and `task2-results.json`.
+
+Note: the dashboard data has no per-region risk score and no weekly volcano history, so Q2 and Q4 test whether each model admits the data is missing or invents an answer.
+
+---
+
 # Installation
 
 ## Requirements

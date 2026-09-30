@@ -1,0 +1,2963 @@
+{
+  "capturedAt": "2026-09-30T19:48:10.355Z",
+  "globalRiskLevel": "ELEVATED",
+  "globalRiskScore": 34,
+  "topThreat": {
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "size": 0.7,
+    "color": "#ff0033",
+    "title": "CVE-2026-100291",
+    "type": "CVE",
+    "location": "Cyber Intelligence",
+    "details": "Severity: CRITICAL\nCVSS Score: 9.8\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, several ONVIF service endpoints process management requests without enforcing required authentication. This could allow an unauthorized attacker to access sensitive device operations.",
+    "time": "2026-09-29T20:17:09.300",
+    "__threeObjPoint": {
+      "metadata": {
+        "version": 4.7,
+        "type": "Object",
+        "generator": "Object3D.toJSON"
+      },
+      "geometries": [
+        {
+          "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "type": "CylinderGeometry",
+          "radiusTop": 1,
+          "radiusBottom": 1,
+          "height": 1,
+          "radialSegments": 12,
+          "heightSegments": 1,
+          "openEnded": false,
+          "thetaStart": 0,
+          "thetaLength": 6.283185307179586
+        }
+      ],
+      "materials": [
+        {
+          "uuid": "52e5d346-8406-4bcc-a677-49eb4d35d9dd",
+          "type": "MeshLambertMaterial",
+          "color": 16711731,
+          "emissive": 0,
+          "envMapRotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "envMapIntensity": 1,
+          "reflectivity": 1,
+          "refractionRatio": 0.98,
+          "blendColor": 0
+        }
+      ],
+      "object": {
+        "uuid": "a5d38fcf-a568-457e-943b-dfdd33d96ad0",
+        "type": "Mesh",
+        "layers": 1,
+        "matrix": [
+          0.6549851614811558,
+          -1.3563933047811345e-16,
+          -1.0313194438166946,
+          0,
+          0.631745910595398,
+          0.9656844027585677,
+          0.4012182643769995,
+          0,
+          2.335315983881794,
+          -2.1439629596248486,
+          1.4831460087202717,
+          0,
+          -66.7233138251941,
+          61.256084560709965,
+          -42.3756002491506,
+          1
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+        "material": "52e5d346-8406-4bcc-a677-49eb4d35d9dd"
+      }
+    }
+  },
+  "correlatedThreats": [],
+  "dashboardStats": {
+    "earthquakes": 34,
+    "volcanoes": 32,
+    "cves": 20,
+    "kevs": 0,
+    "ransomware": 0,
+    "threatIntel": 0,
+    "breaches": 25,
+    "outages": 0,
+    "bgp": 0,
+    "aircraft": 0,
+    "maritime": 4
+  },
+  "feedHealth": {
+    "earthquakes": true,
+    "volcanoes": true,
+    "spaceWeather": true,
+    "iss": true,
+    "cves": true,
+    "kev": false,
+    "ransomware": false,
+    "threatIntel": false,
+    "breaches": true,
+    "outages": false,
+    "bgp": false,
+    "aircraft": false,
+    "maritime": true
+  },
+  "threatTimeline": [],
+  "aircraft": [],
+  "maritime": [
+    {
+      "lat": -29.87,
+      "lng": 31.095000000000002,
+      "title": "Durban Cargo Vessel",
+      "type": "Maritime",
+      "location": "Durban Port",
+      "details": "Simulated cargo vessel operating near Durban harbour.",
+      "time": "Live",
+      "speed": 0.015,
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "0b48fae7-935f-4cfe-9844-920c46db841c",
+            "type": "MeshLambertMaterial",
+            "color": 65484,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "286bf27c-bbd1-4204-850d-1fdcfd903832",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.6726521651931072,
+            2.179917811255395e-17,
+            0.40544955263153226,
+            0,
+            0.20192756736330053,
+            0.6810640159954375,
+            0.3350034906131444,
+            0,
+            -1.5618224732708175,
+            1.7375825948424348,
+            -2.591107232636679,
+            0,
+            44.7656606083715,
+            -49.803376536663706,
+            74.26748491664029,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+          "material": "0b48fae7-935f-4cfe-9844-920c46db841c"
+        }
+      }
+    },
+    {
+      "lat": -33.91,
+      "lng": 18.456000000000003,
+      "title": "Cape Town Container Ship",
+      "type": "Maritime",
+      "location": "Cape Town Port",
+      "details": "Simulated container vessel near Cape Town.",
+      "time": "Live",
+      "speed": 0.012,
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "0b48fae7-935f-4cfe-9844-920c46db841c",
+            "type": "MeshLambertMaterial",
+            "color": 65484,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "27c6e938-6a97-47fe-89f3-b6b1c26af0d8",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.7450548757594426,
+            1.0899589056276974e-17,
+            0.24848240818047185,
+            0,
+            0.13862584199200578,
+            0.6518136598885566,
+            0.4156586385277919,
+            0,
+            -0.9160640607621042,
+            1.9464132505225387,
+            -2.746745735348354,
+            0,
+            26.256651644705638,
+            -55.788996495608004,
+            78.72849620322755,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+          "material": "0b48fae7-935f-4cfe-9844-920c46db841c"
+        }
+      }
+    },
+    {
+      "lat": 1.29,
+      "lng": 103.904,
+      "title": "Singapore Tanker",
+      "type": "Maritime",
+      "location": "Singapore Strait",
+      "details": "Simulated tanker vessel in major shipping lane.",
+      "time": "Live",
+      "speed": 0.018,
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "0b48fae7-935f-4cfe-9844-920c46db841c",
+            "type": "MeshLambertMaterial",
+            "color": 65484,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "a0814f26-2a9a-4127-95b6-95d24ebf99b6",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.18848836852317247,
+            2.7248972640692436e-18,
+            0.7624450209684354,
+            0,
+            -0.01716480675044854,
+            0.7851991072036416,
+            0.00424340946747625,
+            0,
+            -3.386063278526265,
+            -0.07854470058164874,
+            0.8370879545845482,
+            0,
+            97.05291120932041,
+            2.251284522606799,
+            -23.993001975451893,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+          "material": "0b48fae7-935f-4cfe-9844-920c46db841c"
+        }
+      }
+    },
+    {
+      "lat": 51.95,
+      "lng": 4.182,
+      "title": "Rotterdam Freight Vessel",
+      "type": "Maritime",
+      "location": "Port of Rotterdam",
+      "details": "Simulated freight vessel near Rotterdam.",
+      "time": "Live",
+      "speed": 0.014,
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "0b48fae7-935f-4cfe-9844-920c46db841c",
+            "type": "MeshLambertMaterial",
+            "color": 65484,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "67e993c4-7592-43bc-9dae-8ecb6a40aa42",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.7833209624432561,
+            -2.7248972640692436e-18,
+            0.057083665483705144,
+            0,
+            -0.04495185602014774,
+            0.4840793018643314,
+            -0.6168442552338234,
+            0,
+            -0.15629140890044652,
+            -2.7474024325889834,
+            -2.1446824727199325,
+            0,
+            4.479696622030205,
+            78.7473187631574,
+            61.471880610473036,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "7fae5abe-cdbe-4e1a-a53e-549c565aaad8",
+          "material": "0b48fae7-935f-4cfe-9844-920c46db841c"
+        }
+      }
+    }
+  ],
+  "earthquakes": [
+    {
+      "lat": 52.3676,
+      "lng": 160.2895,
+      "title": "M4.9 Earthquake",
+      "type": "Earthquake",
+      "location": "136 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "details": "Depth: 32 km",
+      "time": "9/30/2026, 8:36:22 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "7d99b485-28e9-4a2a-bfd1-b6cf5afb4730",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            1.0063792938257714,
+            -2.967110354208732e-17,
+            0.3605440415224138,
+            0,
+            -0.2855308662692605,
+            0.6527326693332836,
+            0.7969965343156431,
+            0,
+            -0.7207668357381599,
+            -2.771805707071393,
+            2.011861896539237,
+            0,
+            20.59333816394743,
+            79.19444877346837,
+            -57.48176847254964,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    },
+    {
+      "lat": 52.3167,
+      "lng": 160.3332,
+      "title": "M5 Earthquake",
+      "type": "Earthquake",
+      "location": "142 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "details": "Depth: 35 km",
+      "time": "9/30/2026, 8:21:19 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "ad658387-0146-49d3-a9e8-719d98110fcb",
+            "type": "MeshLambertMaterial",
+            "color": 16726843,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "61b8f532-e275-4f4c-9c0b-024b83da77f0",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            1.027197950229013,
+            3.027663626743604e-17,
+            0.3671187370417707,
+            0,
+            -0.2905384076974596,
+            0.6668209263150268,
+            0.8129262462996412,
+            0,
+            -0.7200605960092242,
+            -2.7699060939660174,
+            2.0147290062648042,
+            0,
+            20.573159885977834,
+            79.14017411331477,
+            -57.5636858932801,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "ad658387-0146-49d3-a9e8-719d98110fcb"
+        }
+      }
+    },
+    {
+      "lat": -0.7769,
+      "lng": 122.3906,
+      "title": "M4.4 Earthquake",
+      "type": "Earthquake",
+      "location": "48 km WNW of Luwuk, Indonesia",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 6:29:32 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "bf336ab5-be96-4e8e-867d-4ff9479acb0b",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.51422382083599,
+            1.6652149947089824e-18,
+            0.8105809996167127,
+            0,
+            0.010990706242031387,
+            0.9598428439467838,
+            -0.006972385190543292,
+            0,
+            -2.955183688945031,
+            0.04745666610159798,
+            1.874736576011617,
+            0,
+            84.43381968414374,
+            -1.3559047457599422,
+            -53.56390217176049,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    },
+    {
+      "lat": 19.2878341674805,
+      "lng": -155.393325805664,
+      "title": "M2.7 Earthquake",
+      "type": "Earthquake",
+      "location": "12 km NE of Pāhala, Hawaii",
+      "details": "Depth: 29 km",
+      "time": "9/30/2026, 5:02:23 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "9816b1bb-f4fe-4493-aaf0-07611bac0a49",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5355557103195397,
+            8.17469179220773e-18,
+            -0.24527201403733567,
+            0,
+            0.0810167762159562,
+            0.5559859770286913,
+            0.1769015405382975,
+            0,
+            1.3755538290332767,
+            -1.1560989453639134,
+            3.003545719971704,
+            0,
+            -39.30153797237932,
+            33.03139843896894,
+            -85.81559199919153,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    },
+    {
+      "lat": 18.6803333333333,
+      "lng": -64.8291666666667,
+      "title": "M2.6 Earthquake",
+      "type": "Earthquake",
+      "location": "38 km N of Cruz Bay, U.S. Virgin Islands",
+      "details": "Depth: 20 km",
+      "time": "9/30/2026, 4:32:45 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "3112e402-edf4-4784-885f-5f59bb4fe95a",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.24125434021170813,
+            -4.7231552577200224e-17,
+            -0.5133697429521185,
+            0,
+            0.1644260879343737,
+            0.5373503789141066,
+            -0.07727083238308324,
+            0,
+            3.000781787147018,
+            -1.1210074525642302,
+            -1.4101953613674238,
+            0,
+            -85.73662248991481,
+            32.02878435897801,
+            40.2912960390693,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    },
+    {
+      "lat": 31.618,
+      "lng": -104.363,
+      "title": "M2.9 Earthquake",
+      "type": "Earthquake",
+      "location": "61 km S of Whites City, New Mexico",
+      "details": "Depth: 6 km",
+      "time": "9/30/2026, 3:35:58 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "d0d0764f-5d90-414c-ae37-12b95cfddb1d",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.1569458138691371,
+            3.5120898070225803e-17,
+            -0.6129064689635979,
+            0,
+            0.3213183357944974,
+            0.5387680001346573,
+            0.08227938564201916,
+            0,
+            2.887309139850803,
+            -1.8348871030557437,
+            0.7393478545135018,
+            0,
+            -82.49454685288008,
+            52.42534580159267,
+            -21.124224414671502,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    },
+    {
+      "lat": 14.9174,
+      "lng": 108.2955,
+      "title": "M4.4 Earthquake",
+      "type": "Earthquake",
+      "location": "47 km S of Trà My, Vietnam",
+      "details": "Depth: 10 km",
+      "time": "9/30/2026, 1:24:41 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "ca74af2a-e9ce-4a0d-8726-5486d99f640c",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.30133953928247387,
+            1.332171995767186e-17,
+            0.9114067022574609,
+            0,
+            -0.2346200163546795,
+            0.9275794399796574,
+            0.07757270981181971,
+            0,
+            -3.2110810082432204,
+            -0.9009919009893437,
+            1.0616837348529522,
+            0,
+            91.74517166409201,
+            25.742625742552676,
+            -30.333820995798618,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    },
+    {
+      "lat": -9.9243,
+      "lng": 123.6462,
+      "title": "M5 Earthquake",
+      "type": "Earthquake",
+      "location": "27 km N of Kupang, Indonesia",
+      "details": "Depth: 19 km",
+      "time": "9/30/2026, 12:58:50 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "ad658387-0146-49d3-a9e8-719d98110fcb",
+            "type": "MeshLambertMaterial",
+            "color": 16726843,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "4184fc58-7192-48c3-94e6-bdc735fed739",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.6043889635604427,
+            -3.027663626743604e-17,
+            0.9080890797538337,
+            0,
+            0.1565063237023737,
+            1.0745079395668191,
+            -0.10416455486809131,
+            0,
+            -2.8700625142663236,
+            0.6032140955893875,
+            1.9102025858755276,
+            0,
+            82.00178612189494,
+            -17.234688445411066,
+            -54.57721673930077,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "ad658387-0146-49d3-a9e8-719d98110fcb"
+        }
+      }
+    },
+    {
+      "lat": 19.4623,
+      "lng": -65.3035,
+      "title": "M3.58 Earthquake",
+      "type": "Earthquake",
+      "location": "127 km NNE of Vieques, Puerto Rico",
+      "details": "Depth: 77 km",
+      "time": "9/30/2026, 12:56:40 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "177d0751-6318-4c57-a674-4092be7dbd6c",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.3263253970661795,
+            0,
+            -0.7095964747243472,
+            0,
+            0.23642799361708877,
+            0.7364072345310911,
+            -0.1087272296901244,
+            0,
+            2.998173253415384,
+            -1.1661528870774962,
+            -1.378783734479572,
+            0,
+            -85.66209295472525,
+            33.31865391649988,
+            39.39382098513062,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    },
+    {
+      "lat": 62.048,
+      "lng": -147.635,
+      "title": "M3.1 Earthquake",
+      "type": "Earthquake",
+      "location": "26 km N of Glacier View, Alaska",
+      "details": "Depth: 21 km",
+      "time": "9/30/2026, 12:31:47 PM",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f56121b4-30cd-4e1d-b45d-7a72913f61fb",
+            "type": "MeshLambertMaterial",
+            "color": 16755200,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "863e31e2-32a3-4afb-b7c3-5dd7b3ca1674",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5712529763485931,
+            -3.754302897162069e-17,
+            -0.36203885345547304,
+            0,
+            0.31980361316392236,
+            0.31701032073328284,
+            0.5046109391941092,
+            0,
+            0.8782102019223689,
+            -3.0916920529121943,
+            1.385708155131901,
+            0,
+            -25.09172005492482,
+            88.33405865463412,
+            -39.59166157519715,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "45cea3e8-142f-494d-b8b6-2a221fddb73d",
+          "material": "f56121b4-30cd-4e1d-b45d-7a72913f61fb"
+        }
+      }
+    }
+  ],
+  "volcanoes": [
+    {
+      "lat": -36.868,
+      "lng": -71.378,
+      "title": "Nevados del Chillan Volcano, Chile",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-06-15T00:00:00Z"
+    },
+    {
+      "lat": 12.606,
+      "lng": -86.84,
+      "title": "Telica Volcano, Nicaragua",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-30T00:00:00Z"
+    },
+    {
+      "lat": 45.7593,
+      "lng": 149.6762,
+      "title": "Ivao Group Volcano, Russia",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-29T00:00:00Z"
+    },
+    {
+      "lat": -3.03,
+      "lng": 147.78,
+      "title": "Titan Ridge Volcano, Papua New Guinea",
+      "type": "Volcano",
+      "location": "EO",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-28T00:00:00Z"
+    },
+    {
+      "lat": 30.793,
+      "lng": 130.305,
+      "title": "Kikai Volcano, Japan",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-17T00:00:00Z"
+    },
+    {
+      "lat": 55.972,
+      "lng": 160.595,
+      "title": "Bezymianny Volcano, Russia",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-16T00:00:00Z"
+    },
+    {
+      "lat": -5.525,
+      "lng": 148.42,
+      "title": "Langila Volcano, Papua New Guinea",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-05-08T00:00:00Z"
+    },
+    {
+      "lat": 10.8314,
+      "lng": -85.3364,
+      "title": "Rincon de la Vieja Volcano, Costa Rica",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-04-27T00:00:00Z"
+    },
+    {
+      "lat": 11.9844,
+      "lng": -86.1688,
+      "title": "Masaya Volcano, Nicaragua",
+      "type": "Volcano",
+      "location": "SIVolcano",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-04-26T00:00:00Z"
+    },
+    {
+      "lat": 13.257,
+      "lng": 123.685,
+      "title": "Mayon Volcano, Philippines",
+      "type": "Volcano",
+      "location": "EO",
+      "details": "Active volcano event tracked by NASA EONET.",
+      "time": "2026-01-07T00:00:00Z"
+    }
+  ],
+  "cves": [
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2024-31026",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: 0\n\nAn issue in Greek Universities Network (GUnet) Open eClass Platform v.3.15 allows a remote attacker to execute arbitrary code via the chat input field in the course module.",
+      "time": "2026-09-29T20:17:07.577",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "7512cb3e-b496-4a28-9ae9-532f3b9ca060",
+            "type": "MeshLambertMaterial",
+            "color": 16772608,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "c05c7e52-4195-4ab5-9b82-0c83c0ce042d",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.3742772351320891,
+            -7.750818884463627e-17,
+            -0.5893253964666828,
+            0,
+            0.36099766319737037,
+            0.5518196587191816,
+            0.22926757964399974,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "7512cb3e-b496-4a28-9ae9-532f3b9ca060"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2024-31027",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: UNKNOWN\nCVSS Score: 0\n\nCross Site Scripting vulnerability in Greek Universities Network (GUnet) Open eClass Platform v.3.15 allows a remote attacker to execute arbitrary code via the last name, first name, and username parameters in the user registration functionality.",
+      "time": "2026-09-29T20:17:08.700",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "7512cb3e-b496-4a28-9ae9-532f3b9ca060",
+            "type": "MeshLambertMaterial",
+            "color": 16772608,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "8105168d-98f8-4650-979b-7c84d2268000",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.3742772351320891,
+            -7.750818884463627e-17,
+            -0.5893253964666828,
+            0,
+            0.36099766319737037,
+            0.5518196587191816,
+            0.22926757964399974,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "7512cb3e-b496-4a28-9ae9-532f3b9ca060"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100291",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: CRITICAL\nCVSS Score: 9.8\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, several ONVIF service endpoints process management requests without enforcing required authentication. This could allow an unauthorized attacker to access sensitive device operations.",
+      "time": "2026-09-29T20:17:09.300",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "52e5d346-8406-4bcc-a677-49eb4d35d9dd",
+            "type": "MeshLambertMaterial",
+            "color": 16711731,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "a5d38fcf-a568-457e-943b-dfdd33d96ad0",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.6549851614811558,
+            -1.3563933047811345e-16,
+            -1.0313194438166946,
+            0,
+            0.631745910595398,
+            0.9656844027585677,
+            0.4012182643769995,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "52e5d346-8406-4bcc-a677-49eb4d35d9dd"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100292",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, a hidden debug interface can be enabled through an authenticated request, allowing additional commands to be sent to a backend service. Once active, this pathway can unintentionally expose system‑level functionality that could be misused if crafted inputs reach the underlying command handler.",
+      "time": "2026-09-29T20:17:09.477",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f325fede-beea-4419-89f8-d710829d0a58",
+            "type": "MeshLambertMaterial",
+            "color": 16746496,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "bccf718a-1adf-4d3b-99c0-ac5376f4a3aa",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5146311983066225,
+            -1.0657375966137487e-16,
+            -0.8103224201416888,
+            0,
+            0.4963717868963842,
+            0.7587520307388748,
+            0.31524292201049964,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "f325fede-beea-4419-89f8-d710829d0a58"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100293",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, both the local and cloud update mechanisms apply new firmware without any cryptographic verification, relying only on basic hashing. This design allows an attacker who can reach the update routine to introduce untrusted firmware images that the device will accept as valid.",
+      "time": "2026-09-29T20:17:09.630",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f325fede-beea-4419-89f8-d710829d0a58",
+            "type": "MeshLambertMaterial",
+            "color": 16746496,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "129e0d37-6c2a-4e41-9dfb-da00b6ee2588",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5146311983066225,
+            -1.0657375966137487e-16,
+            -0.8103224201416888,
+            0,
+            0.4963717868963842,
+            0.7587520307388748,
+            0.31524292201049964,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "f325fede-beea-4419-89f8-d710829d0a58"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100294",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 7.5\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, the firmware embeds hardcoded cloud‑API credentials that are shared across deployed devices. Anyone obtaining the public firmware package can reuse these values to interact with the cloud service in ways not intended for normal operation.",
+      "time": "2026-09-29T20:17:09.787",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f325fede-beea-4419-89f8-d710829d0a58",
+            "type": "MeshLambertMaterial",
+            "color": 16746496,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "a83176d2-9fe3-4c24-bcfa-2546db87d051",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5146311983066225,
+            -1.0657375966137487e-16,
+            -0.8103224201416888,
+            0,
+            0.4963717868963842,
+            0.7587520307388748,
+            0.31524292201049964,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "f325fede-beea-4419-89f8-d710829d0a58"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100295",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: MEDIUM\nCVSS Score: 6.3\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, an internal debug interface can be enabled through an undocumented pathway, exposing functions not intended for normal operation. When activated, this interface allows actions that could unintentionally provide elevated system access.",
+      "time": "2026-09-29T20:17:09.940",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "7512cb3e-b496-4a28-9ae9-532f3b9ca060",
+            "type": "MeshLambertMaterial",
+            "color": 16772608,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "a9197015-9a07-4d5a-824b-6dbae19a1b0d",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.3742772351320891,
+            -7.750818884463627e-17,
+            -0.5893253964666828,
+            0,
+            0.36099766319737037,
+            0.5518196587191816,
+            0.22926757964399974,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "7512cb3e-b496-4a28-9ae9-532f3b9ca060"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100296",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.1\n\nIn Anjvision YSSD-RTMP-H5 firmware version 3.3.2.4, an empty-body POST to /setUserConfig, dispatched through the web server's SOAP-RPC handler, silently downgrades the administrator password to the default value and corrupts the in-memory authentication state until the device reloads. The handler does not verify the session's privilege level, so any authenticated user can trigger it.",
+      "time": "2026-09-29T20:17:10.097",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f325fede-beea-4419-89f8-d710829d0a58",
+            "type": "MeshLambertMaterial",
+            "color": 16746496,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "fdc659c8-d713-4006-b565-c2b10da8dfb6",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5146311983066225,
+            -1.0657375966137487e-16,
+            -0.8103224201416888,
+            0,
+            0.4963717868963842,
+            0.7587520307388748,
+            0.31524292201049964,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "f325fede-beea-4419-89f8-d710829d0a58"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100297",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: MEDIUM\nCVSS Score: 5.3\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, an unauthenticated network check function can be triggered to probe arbitrary hosts from the device’s internal network. This may expose internal information or leak data via DNS queries.",
+      "time": "2026-09-29T20:17:10.253",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "7512cb3e-b496-4a28-9ae9-532f3b9ca060",
+            "type": "MeshLambertMaterial",
+            "color": 16772608,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "27755fc8-bc04-4480-b8a3-c623cc2fa704",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.3742772351320891,
+            -7.750818884463627e-17,
+            -0.5893253964666828,
+            0,
+            0.36099766319737037,
+            0.5518196587191816,
+            0.22926757964399974,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "7512cb3e-b496-4a28-9ae9-532f3b9ca060"
+        }
+      }
+    },
+    {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "title": "CVE-2026-100298",
+      "type": "CVE",
+      "location": "Cyber Intelligence",
+      "details": "Severity: HIGH\nCVSS Score: 8.8\n\nIn Anjvision YSSD‑RTMP‑H5 firmware version 3.3.2.4, two user‑information endpoints can reveal sensitive device and account details under conditions that are not intended for normal operation.",
+      "time": "2026-09-29T20:17:10.403",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "f325fede-beea-4419-89f8-d710829d0a58",
+            "type": "MeshLambertMaterial",
+            "color": 16746496,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "29faee8d-6458-45fc-aef5-524768169c07",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5146311983066225,
+            -1.0657375966137487e-16,
+            -0.8103224201416888,
+            0,
+            0.4963717868963842,
+            0.7587520307388748,
+            0.31524292201049964,
+            0,
+            2.335315983881794,
+            -2.1439629596248486,
+            1.4831460087202717,
+            0,
+            -66.7233138251941,
+            61.256084560709965,
+            -42.3756002491506,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "1b3eea19-2bd8-4d85-98c5-457726b0760c",
+          "material": "f325fede-beea-4419-89f8-d710829d0a58"
+        }
+      }
+    }
+  ],
+  "kevAlerts": [],
+  "ransomwareAlerts": [],
+  "breachAlerts": [
+    {
+      "lat": 27.617619357836016,
+      "lng": -82.91143854931849,
+      "title": "000webhost",
+      "type": "Data Breach",
+      "location": "000webhost.com",
+      "details": "In approximately March 2015, the free web hosting provider <a href=\"http://www.troyhunt.com/2015/10/breaches-traders-plain-text-passwords.html\" target=\"_blank\" rel=\"noopener\">000webhost suffered a major data breach</a> that exposed almost 15 million customer records. The data was sold and traded before 000webhost was alerted in October. The breach included names, email addresses and plain text passwords.\n\nRecords: 14,936,670\n\nData Classes:\nEmail addresses, IP addresses, Names, Passwords",
+      "time": "2015-03-01",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "e6219efa-eab0-419f-aae8-af70bbeee87a",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.16153462676663127,
+            -7.26639270418465e-17,
+            -1.2989917438750722,
+            0,
+            0.6021716994485637,
+            1.159851223782096,
+            -0.07488237025254466,
+            0,
+            3.077509896869314,
+            -1.62248987186224,
+            -0.3827002095320538,
+            0,
+            -87.9288541962661,
+            46.35685348177828,
+            10.934291700915843,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 28.63001533755935,
+      "lng": -126.8298735623442,
+      "title": "123RF",
+      "type": "Data Breach",
+      "location": "123rf.com",
+      "details": "In March 2020, the stock photo site <a href=\"https://www.bleepingcomputer.com/news/security/popular-stock-photo-service-hit-by-data-breach-83m-records-for-sale/\" target=\"_blank\" rel=\"noopener\">123RF suffered a data breach</a> which impacted over 8 million subscribers and was subsequently sold online. The breach included email, IP and physical addresses, names, phone numbers and passwords stored as MD5 hashes. The data was provided to HIBP by <a href=\"https://dehashed.com/\" target=\"_blank\" rel=\"noopener\">dehashed.com</a>.\n\nRecords: 8,661,578\n\nData Classes:\nEmail addresses, IP addresses, Names, Passwords, Phone numbers",
+      "time": "2020-03-22",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "4f8a5008-ebc5-459d-b6bc-0b6f89f43bd7",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.7846664498469328,
+            7.26639270418465e-17,
+            -1.0477459371359292,
+            0,
+            0.5020292868380294,
+            1.1489486116753698,
+            0.37597429325204645,
+            0,
+            2.458936833670433,
+            -1.6770310832569189,
+            1.8415201312526972,
+            0,
+            -70.25533810486951,
+            47.91517380734053,
+            -52.61486089293422,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 43.08468674955979,
+      "lng": -82.960580018734,
+      "title": "126",
+      "type": "Data Breach",
+      "location": "126.com",
+      "details": "In approximately 2012, it's alleged that the Chinese email service known as <a href=\"http://126.com\" target=\"_blank\" rel=\"noopener\">126</a> suffered a data breach that impacted 6.4 million subscribers. Whilst there is evidence that the data is legitimate, due to the difficulty of emphatically verifying the Chinese breach it has been flagged as \"unverified\". The data in the breach contains email addresses and plain text passwords. <a href=\"https://www.troyhunt.com/handling-chinese-data-breaches-in-have-i-been-pwned/\" target=\"_blank\" rel=\"noopener\">Read more about Chinese data breaches in Have I Been Pwned.</a>\n\nRecords: 6,414,191\n\nData Classes:\nEmail addresses, Passwords",
+      "time": "2012-01-01",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "3b23e28d-1987-46b4-b887-0388061fee26",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.16042044767833988,
+            -7.26639270418465e-17,
+            -1.2991298111685823,
+            0,
+            0.887407774270333,
+            0.9560191950859122,
+            -0.10957977501388672,
+            0,
+            2.5369385231659405,
+            -2.3907751044157384,
+            -0.3132687820108036,
+            0,
+            -72.48395780474115,
+            68.30786012616394,
+            8.950536628880123,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 17.796559969867914,
+      "lng": -121.5687190418502,
+      "title": "17Media",
+      "type": "Data Breach",
+      "location": "17app.co",
+      "details": "In April 2016, customer data obtained from the streaming app known as \"17\" <a href=\"http://motherboard.vice.com/read/another-day-another-hack-millions-of-user-accounts-for-streaming-app-17\" target=\"_blank\" rel=\"noopener\">appeared listed for sale on a Tor hidden service marketplace</a>. The data contained over 4 million unique email addresses along with IP addresses, usernames and passwords stored as unsalted MD5 hashes.\n\nRecords: 4,009,640\n\nData Classes:\nDevice information, Email addresses, IP addresses, Passwords, Usernames",
+      "time": "2016-04-19",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "7f6514ce-9ff6-4d4c-a186-fe3ef7986d22",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.6852871544358322,
+            0,
+            -1.1152822522866022,
+            0,
+            0.3408727917186692,
+            1.2463584835810644,
+            0.2094498903596434,
+            0,
+            2.8393474991640972,
+            -1.0697334854645877,
+            1.7446420976998052,
+            0,
+            -81.12421426183133,
+            30.563813870416784,
+            -49.846917077137284,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 34.399935769041306,
+      "lng": -71.27215935104854,
+      "title": "17173",
+      "type": "Data Breach",
+      "location": "17173.com",
+      "details": "In late 2011, <a href=\"https://news.softpedia.com/news/China-Investigates-Hacking-Operations-That-Exposed-100-Million-Users-244312.shtml\" target=\"_blank\" rel=\"noopener\">a series of data breaches in China affected up to 100 million users</a>, including 7.5 million from the gaming site known as 17173. Whilst there is evidence that the data is legitimate, due to the difficulty of emphatically verifying the Chinese breach it has been flagged as \"unverified\". The data in the breach contains usernames, email addresses and salted MD5 password hashes and was provided with support from <a href=\"https://dehashed.com/\" target=\"_blank\" rel=\"noopener\">dehashed.com</a>. <a href=\"https://www.troyhunt.com/handling-chinese-data-breaches-in-have-i-been-pwned/\" target=\"_blank\" rel=\"noopener\">Read more about Chinese data breaches in Have I Been Pwned.</a>\n\nRecords: 7,485,802\n\nData Classes:\nEmail addresses, Passwords, Usernames",
+      "time": "2011-12-28",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "4d6dfc8a-c5e8-4c82-8218-199f61254077",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.4202838524889828,
+            -7.26639270418465e-17,
+            -1.239691279971451,
+            0,
+            0.700383520919175,
+            1.0800718726249567,
+            -0.23744611997148843,
+            0,
+            2.734997823305886,
+            -1.9773812745327735,
+            -0.9272271575181616,
+            0,
+            -78.14279495159674,
+            56.49660784379352,
+            26.492204500518923,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 43.97789935079133,
+      "lng": -84.67667397150967,
+      "title": "1win",
+      "type": "Data Breach",
+      "location": "1win.com",
+      "details": "In November 2024, <a href=\"https://cryptoadventure.com/1win-hack-leaks-data-of-100-million-users-can-gamblefi-save-the-day/\" target=\"_blank\" rel=\"noopener\">the online betting platform 1win suffered a data breach that exposed 96M users</a>. The exposed data included email and IP addresses, phone numbers, dates of birth, country and SHA-256 password hashes.\n\nRecords: 96,166,543\n\nData Classes:\nDates of birth, Email addresses, Geographic locations, IP addresses, Passwords",
+      "time": "2024-11-02",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "7c87abc2-690b-4b37-bbd0-51350ff9aac4",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.12144344141535753,
+            7.26639270418465e-17,
+            -1.3033512484504823,
+            0,
+            0.9050221457890325,
+            0.941964272340229,
+            -0.08432799989442527,
+            0,
+            2.507764126182399,
+            -2.430332969740473,
+            -0.23366802011632729,
+            0,
+            -71.65040360521141,
+            69.43808484972779,
+            6.67622914618077,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 26.00821696311548,
+      "lng": -120.03140978260757,
+      "title": "2844Breaches",
+      "type": "Data Breach",
+      "location": "",
+      "details": "In February 2018, <a href=\"https://www.troyhunt.com/ive-just-added-2844-new-data-breaches-with-80m-records-to-have-i-been-pwned/\" target=\"_blank\" rel=\"noopener\">a massive collection of almost 3,000 alleged data breaches was found online</a>. Whilst some of the data had previously been seen in Have I Been Pwned, 2,844 of the files consisting of more than 80 million unique email addresses had not previously been seen. Each file contained both an email address and plain text password and were consequently loaded as a single \"unverified\" data breach.\n\nRecords: 80,115,532\n\nData Classes:\nEmail addresses, Passwords",
+      "time": "2018-02-19",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "d9594e6f-7316-44ca-a34c-cae207455ee2",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.6551198288013231,
+            0,
+            -1.1332656335615057,
+            0,
+            0.49693702687791264,
+            1.1764363490813408,
+            0.2872700718455415,
+            0,
+            2.7232714685383153,
+            -1.534750143800508,
+            1.574272690720858,
+            0,
+            -77.80775624395184,
+            43.85000410858593,
+            -44.97921973488165,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 51.19096431945034,
+      "lng": -117.1549027146122,
+      "title": "2fast4u",
+      "type": "Data Breach",
+      "location": "2fast4u.be",
+      "details": "In December 2017, the Belgian motorcycle forum <a href=\"https://www.2fast4u.be\" target=\"_blank\" rel=\"noopener\">2fast4u</a> discovered a data breach of their system. The breach of the vBulletin message board impacted over 17k individual users and exposed email addresses, usersnames and salted MD5 passwords.\n\nRecords: 17,706\n\nData Classes:\nEmail addresses, Passwords, Usernames",
+      "time": "2017-12-20",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "20f52736-f459-425e-8867-64d74e08d46f",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            0.5974232307091012,
+            7.26639270418465e-17,
+            -1.1647139003675264,
+            0,
+            0.9075906561246398,
+            0.8203833410769835,
+            0.465535563516739,
+            0,
+            1.951762070471369,
+            -2.7273369841588324,
+            1.0011282610678447,
+            0,
+            -55.76463058489624,
+            77.92391383310945,
+            -28.603664601938437,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 30.876039539879336,
+      "lng": -73.60442556719661,
+      "title": "500px",
+      "type": "Data Breach",
+      "location": "500px.com",
+      "details": "In mid-2018, the online photography community <a href=\"https://support.500px.com/hc/en-us/articles/360017752493-Security-Issue-February-2019-FAQ\" target=\"_blank\" rel=\"noopener\">500px suffered a data breach</a>. The incident exposed almost 15 million unique email addresses alongside names, usernames, genders, dates of birth and either an MD5 or bcrypt password hash. In 2019, <a href=\"https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/\" target=\"_blank\" rel=\"noopener\">the data appeared listed for sale on a dark web marketplace</a> (along with several other large breaches) and subsequently began circulating more broadly.\n\nRecords: 14,867,999\n\nData Classes:\nDates of birth, Email addresses, Genders, Geographic locations, Names",
+      "time": "2018-07-05",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "27720da6-ae85-484d-ad42-96bbf5229b85",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -0.36948710746913993,
+            7.26639270418465e-17,
+            -1.2557675994045732,
+            0,
+            0.644437797764779,
+            1.1234853534272606,
+            -0.18961427094694283,
+            0,
+            2.8818241126756794,
+            -1.7961383087493228,
+            -0.8479250907032758,
+            0,
+            -82.33783179073369,
+            51.318237392837794,
+            24.22643116295072,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    },
+    {
+      "lat": 57.44436386581661,
+      "lng": -144.1262800353835,
+      "title": "7-Eleven",
+      "type": "Data Breach",
+      "location": "7-eleven.com",
+      "details": "In April 2026, <a href=\"https://www.bleepingcomputer.com/news/security/7-eleven-confirms-data-breach-claimed-by-the-shinyhunters-gang/\" target=\"_blank\" rel=\"noopener\">7-Eleven was the victim of a \"pay or leak\" extortion campaign by ShinyHunters</a>, with the data later published that month. The incident exposed 185k unique email addresses, along with names, physical addresses, dates of birth and phone numbers. A small number of records also contained additional exposed data fields. The company later advised the breach was limited to \"certain 7-Eleven systems used to store franchisee documents\", a statement consistent with the exposed data.\n\nRecords: 185,256\n\nData Classes:\nDates of birth, Email addresses, Names, Phone numbers, Physical addresses",
+      "time": "2026-04-08",
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "87c014e9-f034-4963-861b-05bb440c16cd",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6",
+            "type": "MeshLambertMaterial",
+            "color": 16737792,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "7851082b-a186-4e96-86e2-3db7950dfff1",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            1.0606939752372646,
+            3.633196352092325e-17,
+            -0.767073188943275,
+            0,
+            0.6465424511988052,
+            0.7043952290419631,
+            0.8940264014004268,
+            0,
+            1.1036820809443448,
+            -2.9500425928237726,
+            1.5261502431700351,
+            0,
+            -31.533773741267,
+            84.28693122353634,
+            -43.60429266200101,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "87c014e9-f034-4963-861b-05bb440c16cd",
+          "material": "3eff73f2-cdfa-4eb3-8fd5-c821b793afc6"
+        }
+      }
+    }
+  ],
+  "threatIntelAlerts": [],
+  "spaceWeather": {
+    "status": "Quiet"
+  },
+  "iss": [
+    {
+      "lat": -21.973752011133207,
+      "lng": 29.205280380360325,
+      "title": "International Space Station",
+      "type": "Space Object",
+      "location": "Low Earth Orbit (422 km)",
+      "details": "Ground Point:\n  -21.97° South 29.21° East\n\n  Orbital Speed:\n  27580 km/h\n  7661 m/s\n\n  Altitude:\n  421.8 km",
+      "time": "Live",
+      "isOrbitDot": false,
+      "__threeObjPoint": {
+        "metadata": {
+          "version": 4.7,
+          "type": "Object",
+          "generator": "Object3D.toJSON"
+        },
+        "geometries": [
+          {
+            "uuid": "4b6820c6-aed4-40fc-b700-411061471c9c",
+            "type": "CylinderGeometry",
+            "radiusTop": 1,
+            "radiusBottom": 1,
+            "height": 1,
+            "radialSegments": 12,
+            "heightSegments": 1,
+            "openEnded": false,
+            "thetaStart": 0,
+            "thetaLength": 6.283185307179586
+          }
+        ],
+        "materials": [
+          {
+            "uuid": "9a870826-7803-40c5-b709-6a5f214e2655",
+            "type": "MeshLambertMaterial",
+            "color": 65535,
+            "emissive": 0,
+            "envMapRotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ],
+            "envMapIntensity": 1,
+            "reflectivity": 1,
+            "refractionRatio": 0.98,
+            "blendColor": 0
+          }
+        ],
+        "object": {
+          "uuid": "dfe26d44-9a03-453a-868b-1386c64e005a",
+          "type": "Mesh",
+          "layers": 1,
+          "matrix": [
+            -1.2187663661419557,
+            0,
+            0.6812929115997522,
+            0,
+            0.25492740688396825,
+            1.294832363024177,
+            0.4560401906845242,
+            0,
+            -1.5835793791149482,
+            1.3095129239139127,
+            -2.8328685834252583,
+            0,
+            45.24938770204013,
+            -37.41817983771035,
+            80.94672773017591,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "geometry": "4b6820c6-aed4-40fc-b700-411061471c9c",
+          "material": "9a870826-7803-40c5-b709-6a5f214e2655"
+        }
+      }
+    }
+  ],
+  "issCrew": {
+    "number": 0,
+    "people": []
+  }
+}
