@@ -1369,20 +1369,26 @@ const threatTimeline = [
 ]
 .slice(0, 50)
 
-// Strip display-only fields so the LLM prompt stays small
-const slimEvents = (events, n = 10) =>
-  (events || []).slice(0, n).map(event => {
-    const rest = { ...event }
-    delete rest.size
-    delete rest.color
-    return rest
-  })
+// The globe library attaches live Three.js objects (__threeObjPoint etc.) to every
+// event it draws. They must never reach the LLM: they flood its context window and
+// change as the globe animates. This deep-copies only plain data fields.
+const DROP_KEYS = new Set(['size', 'color', 'heatSize', 'heatColor', 'weight', 'isOrbitDot', 'sortTime', 'icon'])
 
-const buildDashboardData = () => ({
+const sanitizeForAI = (value) =>
+  JSON.parse(JSON.stringify(value, (key, val) => {
+    if (key.startsWith('__') || DROP_KEYS.has(key)) return undefined
+    if (typeof val === 'number') return Math.round(val * 1000) / 1000
+    if (typeof val === 'string' && val.length > 400) return `${val.slice(0, 400)}…`
+    return val
+  }))
+
+const slimEvents = (events, n = 10) => (events || []).slice(0, n)
+
+const buildDashboardData = () => sanitizeForAI({
   globalRiskLevel,
   globalRiskScore,
   topThreat,
-  correlatedThreats,
+  correlatedThreats: slimEvents(correlatedThreats, 5),
   dashboardStats,
   feedHealth,
   threatTimeline: slimEvents(threatTimeline),

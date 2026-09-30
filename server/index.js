@@ -61,13 +61,27 @@ const app = express()
 app.use(cors())
 app.use(express.json({ limit: '5mb' }))
 
+// Defensive clean-up in case display objects slip through from the browser
+function cleanData(dashboard) {
+  return JSON.parse(JSON.stringify(dashboard, (key, val) => (key.startsWith('__') ? undefined : val)))
+}
+
+// Data first, question LAST: if a prompt is ever too long, Ollama trims the start,
+// so the question and instructions at the end are never the part that gets lost
 function buildUserPrompt(question, dashboard) {
+  const data = JSON.stringify(cleanData(dashboard))
+  const approxTokens = Math.round(data.length / 4)
+  if (approxTokens > 6000) {
+    console.warn(`Warning: dashboard data is ~${approxTokens} tokens and may exceed the context window`)
+  }
   return `
+Dashboard Data (JSON):
+${data}
+
+Answer using ONLY the dashboard data above. If the data does not contain what is needed, say it is not currently shown.
+
 Question:
 ${question}
-
-Dashboard Data:
-${JSON.stringify(dashboard, null, 2)}
 `
 }
 
